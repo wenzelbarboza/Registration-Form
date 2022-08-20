@@ -20,6 +20,16 @@ export const Context = ({ children }) => {
         guardianDetails: yup.string().required(),
         email: yup.string().email("enter a valid email"),
         emergencyNumber: yup.number().min(10, "10 digits required").max(10, "10 digits required").required(),
+        address: yup.string().max(100, "should be lessthan 100 characters"),
+        state: yup.string().required(),
+        city: yup.string().required(),
+        country: yup.string().required(),
+        pincode: yup.number().min(10, "should contain 6 digits").max(10, "should contain 6 digits").required(),
+        occupation: yup.string().max(10),
+        religion: yup.string().required(),
+        maritalStatus: yup.string().required(),
+        bloodGroup: yup.string().required(),
+        nationality: yup.string().required()
 
     })
 
@@ -41,10 +51,10 @@ export const Context = ({ children }) => {
             country: "India",
             pincode: "",
             occupation: "",
-            relegion: "",
+            religion: "",
             maritalStatus: "",
             bloodGroup: "",
-            nationality: ""
+            nationality: "India"
         },
         validationSchema: schema,
     })
