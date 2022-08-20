@@ -15,7 +15,12 @@ export const Context = ({ children }) => {
         sex: yup.string().required(),
         mobile: yup.number().min(10, "10 digits required").max(10, "10 digits required").required(),
         IDType: yup.string().required(),
-        IDValue: yup.number().required()
+        IDValue: yup.number().required(),
+        guardianLabel: yup.string().required(),
+        guardianDetails: yup.string().required(),
+        email: yup.string().email("enter a valid email"),
+        emergencyNumber: yup.number().min(10, "10 digits required").max(10, "10 digits required").required(),
+
     })
 
     const formik = useFormik({
@@ -30,7 +35,7 @@ export const Context = ({ children }) => {
             guardianDetails: "",
             email: "",
             emergencyNumber: "",
-            Adress: "",
+            address: "",
             state: "",
             city: "",
             country: "India",

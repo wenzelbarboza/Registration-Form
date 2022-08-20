@@ -1,4 +1,5 @@
 import React from 'react'
+import { useForm } from '../Context/Context'
 
 const SectionTwo = () => {
 
@@ -16,8 +17,8 @@ const SectionTwo = () => {
                 onBlur={form.handleBlur}
             // style={{ display: "block" }}
             >
-                <option value="" label="sex">
-                    Select a color{" "}
+                <option value="" label="guardianLabel">
+                    Select option{" "}
                 </option>
                 <option value="label1" label="label1">
                     label1
@@ -35,12 +36,14 @@ const SectionTwo = () => {
                 value={guardianDetails}
                 onChange={form.handleChange}
             />
+            <label htmlFor="">Email</label>
             <input
                 type="email"
                 name='email'
                 value={email}
                 onChange={form.handleChange}
             />
+            <label htmlFor="">Emergency Contact Number</label>
             <input
                 type="number"
                 name='emergencyNumber'
