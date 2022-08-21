@@ -12,12 +12,12 @@ export const Context = ({ children }) => {
 
 
     const onSubmit = async (values, actions) => {
-        console.log("formik submit------------------")
+
         dispatch({
             type: "ADD_USER",
             payload: formik.values
         })
-        console.log("state", state)
+
         await new Promise((resolve, reject) => setTimeout(resolve, 1000))
         actions.resetForm()
     }

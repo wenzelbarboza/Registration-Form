@@ -6,7 +6,7 @@ import './SectionOne.css'
 const SectionOne = () => {
     const { formik: form } = useForm()
     const { name, DOB, sex, mobile, IDType, IDValue } = form.values
-    console.log(name, DOB, sex, mobile, IDType, IDValue)
+
     return (
         <div className='section sectionOne'>
             <div className="inputContainer">

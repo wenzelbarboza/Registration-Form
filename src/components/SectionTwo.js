@@ -6,7 +6,7 @@ const SectionTwo = () => {
 
     const { formik: form } = useForm()
     const { guardianLabel, guardianDetails, email, emergencyNumber } = form.values
-    console.log("second>>>>", guardianLabel, guardianDetails, email, emergencyNumber)
+
 
     return (
         <div className="section sectionOne">

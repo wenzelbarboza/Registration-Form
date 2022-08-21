@@ -6,7 +6,7 @@ const SectionThree = () => {
 
     const { formik: form } = useForm()
     const { address, state, city, country, pincode, } = form.values
-    console.log("third>>>>", address, state, city, country, pincode)
+
 
     return (
         <div className='section sectionThree'>
