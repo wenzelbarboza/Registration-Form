@@ -32,10 +32,8 @@ const SectionFour = () => {
                         value={religion}
                         onChange={form.handleChange}
                         onBlur={form.handleBlur}
-                    // style={{ display: "block" }}
                     >
                         <option value="" label="Religion">
-                            Select a Religion{" "}
                         </option>
                         <option value="Religion1" label="Religion1">
                             Religion1
@@ -59,10 +57,8 @@ const SectionFour = () => {
                         value={maritalStatus}
                         onChange={form.handleChange}
                         onBlur={form.handleBlur}
-                    // style={{ display: "block" }}
                     >
                         <option value="" label="maritalStatus">
-                            Select a Marital Status{" "}
                         </option>
                         <option value="single" label="single">
                             single
@@ -86,7 +82,6 @@ const SectionFour = () => {
                         value={bloodGroup}
                         onChange={form.handleChange}
                         onBlur={form.handleBlur}
-                    // style={{ display: "block" }}
                     >
                         <option value="" label="select">
                         </option>

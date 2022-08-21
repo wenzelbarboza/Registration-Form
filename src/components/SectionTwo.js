@@ -19,10 +19,8 @@ const SectionTwo = () => {
                             value={guardianLabel}
                             onChange={form.handleChange}
                             onBlur={form.handleBlur}
-                        // style={{ display: "block" }}
                         >
                             <option value="" label="guardianLabel">
-                                Select option{" "}
                             </option>
                             <option value="label1" label="label1">
                                 label1

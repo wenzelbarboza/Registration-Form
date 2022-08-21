@@ -10,7 +10,7 @@ const SectionOne = () => {
     return (
         <div className='section sectionOne'>
             <div className="inputContainer">
-                <label htmlFor="">name</label>
+                <label htmlFor="">name*</label>
                 <div className='validationContainer'>
                     <input
                         type="text"
@@ -24,7 +24,7 @@ const SectionOne = () => {
                 </div>
             </div>
             <div className="inputContainer">
-                <label htmlFor="">DOB</label>
+                <label htmlFor="">DOB*</label>
                 <div className='validationContainer'>
                     <input
                         type="date"
@@ -38,17 +38,15 @@ const SectionOne = () => {
                 </div>
             </div>
             <div className="inputContainer">
-                <label htmlFor="">sex</label>
+                <label htmlFor="">sex*</label>
                 <div className='validationContainer'>
                     <select
                         name="sex"
                         value={sex}
                         onChange={form.handleChange}
                         onBlur={form.handleBlur}
-                    // style={{ display: "block" }}
                     >
                         <option value="" label="sex">
-                            Select a color{" "}
                         </option>
                         <option value="male" label="male">
                             male
@@ -86,10 +84,9 @@ const SectionOne = () => {
                             value={IDType}
                             onChange={form.handleChange}
                             onBlur={form.handleBlur}
-                        // style={{ display: "block" }}
+
                         >
                             <option value="" label="IDType">
-                                Select a color{" "}
                             </option>
                             <option value="type1" label="type1">
                                 type1

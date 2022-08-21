@@ -32,7 +32,6 @@ const SectionThree = () => {
                         value={state}
                         onChange={form.handleChange}
                         onBlur={form.handleBlur}
-                    // style={{ display: "block" }}
                     >
                         <option value="" label="state">
                             Select a state{" "}
@@ -58,10 +57,8 @@ const SectionThree = () => {
                         value={city}
                         onChange={form.handleChange}
                         onBlur={form.handleBlur}
-                    // style={{ display: "block" }}
                     >
                         <option value="" label="city">
-                            Select a city{" "}
                         </option>
                         <option value="city1" label="city1">
                             city1
