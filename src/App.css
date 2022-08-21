@@ -1,0 +1,92 @@
+.formContainer{
+    width: 90vw;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f0efe2 ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.inputContainer{
+    display: flex;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+label{
+    margin-right: 20px;
+    font-size: 18px;
+
+}
+
+input,select{
+    font-size: 18px;
+    font-weight:normal;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-right: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.validationContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.btn{
+    width: 100px;
+    height: 50px;
+    margin: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.cancel{
+    background-color: transparent;
+    border: 1px solid red;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    color: red;
+    border-radius: 5px;
+}
+
+.submit{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+
+}
+
+.formSubHeading{
+    text-decoration: underline;
+    margin: 0;
+}
+
+/* table styling */
+
+table,td,th {
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+.tableContainer{
+    width: 90vw;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f0efe2 ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
