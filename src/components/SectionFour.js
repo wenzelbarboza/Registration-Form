@@ -8,7 +8,7 @@ const SectionFour = () => {
     const { occupation, religion, maritalStatus, bloodGroup, nationality } = form.values
     console.log("third>>>>", occupation, religion, maritalStatus, bloodGroup, nationality)
 
-    console.log(form.errors)
+    console.log("error<<<<<<<<<<>>>>>>>>>>", form.errors, Object.keys(form.errors).length ? "error" : "noerror")
     console.log("all valuse >>>>>>>>>>>>>>>>>>>>>>>>>>>>", form.values);
 
     return (

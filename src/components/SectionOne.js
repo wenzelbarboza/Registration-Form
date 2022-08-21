@@ -101,7 +101,6 @@ const SectionOne = () => {
                                 type3
                             </option>
                         </select>
-
                         <input
                             type="text"
                             name='IDValue'
